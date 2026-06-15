@@ -2,7 +2,7 @@
 
 Learning semantic HTML for improvement of accessibility. Rebuilding real website using pure semantic HTML to learn structure.
 
-## nav-practicea
+## nav-practice
 
 - Using aria-labels for screen readers.
 - Referencing correctly.
