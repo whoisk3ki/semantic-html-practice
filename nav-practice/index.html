@@ -14,58 +14,56 @@
     <header>
       <h1>Page 3</h1>
 
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li>
-            <a href="/"><p>Home</p></a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="/page-1"><p>Page 1</p></a>
+            <a href="/page-1">Page 1</a>
           </li>
           <li>
-            <a href="/page-2"><p>Page 2</p></a>
+            <a href="/page-2">Page 2</a>
           </li>
           <li>
-            <a href="/page-3"><p>Page 3</p></a>
+            <a href="/page-3">Page 3</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <!-- 3. Breadcrumbs -->
-    <section>
-      <nav>
-        <ol>
-          <li>
-            <a href="/"><p>Home</p></a>
-          </li>
-          <li>
-            <a href="/page-1"><p>Page 1</p></a>
-          </li>
-          <li>
-            <a href="/page-2"><p>Page 2</p></a>
-          </li>
-          <li>
-            <a href="/page-3"><p>Page 3</p></a>
-          </li>
-        </ol>
-      </nav>
-    </section>
+    <nav aria-label="Breadcrumbs">
+      <ol>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/page-1">Page 1</a>
+        </li>
+        <li>
+          <a href="/page-2">Page 2</a>
+        </li>
+        <li>
+          <span aria-current="page">Page 3</span>
+        </li>
+      </ol>
+    </nav>
 
     <!-- 4. Main content area -->
     <main id="main-content">
       <!-- 5. Sidebar nav -->
       <aside>
-        <nav>
+        <nav aria-label="Table of contents">
           <ul>
             <li>
-              <a href="#header-1"><p>main 1st header</p></a>
+              <a href="#header-1">main 1st header</a>
             </li>
             <li>
-              <a href="#header-2"><p>main 2nd header</p></a>
+              <a href="#header-2">main 2nd header</a>
             </li>
             <li>
-              <a href="#header-3"><p>main 3rd header</p></a>
+              <a href="#header-3">main 3rd header</a>
             </li>
           </ul>
         </nav>
@@ -78,7 +76,7 @@
         </header>
 
         <section id="header-1">
-          <h2>main 1st header</h2>
+          <h3>main 1st header</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             hic sapiente sed neque unde fugit?
@@ -86,7 +84,7 @@
         </section>
 
         <section id="header-2">
-          <h2>main 2nd header</h2>
+          <h3>main 2nd header</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             hic sapiente sed neque unde fugit?
@@ -94,7 +92,7 @@
         </section>
 
         <section id="header-3">
-          <h2>main 3rd header</h2>
+          <h3>main 3rd header</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
             hic sapiente sed neque unde fugit?
@@ -107,10 +105,18 @@
     <footer>
       <p>Copyright (c) 2026 Author. All Rights Reserved.</p>
 
-      <nav>
-        <a href="https://www.facebook.com"><p>facebook icon</p></a>
-        <a href="https://www.instagram.com"><p>instagram icon</p></a>
-        <a href="https://www.pinterest.com"><p>pinterest icon</p></a>
+      <nav aria-label="Social media links">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com">facebook icon</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">instagram icon</a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com">pinterest icon</a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
