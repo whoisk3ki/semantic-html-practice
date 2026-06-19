@@ -8,8 +8,27 @@
 <body>
 
   <!-- 1. Skip link -->
+  <a href="#main-content">Skip to main content</a>
   
   <!-- 2. Site header + main nav -->
+  <header>
+    <h1>Contact Page</h1>
+    <p>Contact message for users.<p>
+    
+    <nav aria-label="main-nav">
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/about">About</a>
+        </li>
+        <li>
+          <a href="/contact" aria-current="page">Contact</a>
+        </li>
+      </ul>
+    </nav>    
+  </header>    
       
   <main id="main-content">
 
@@ -20,29 +39,164 @@
       <form>
 
         <!-- 4. Full name field -->
+        <label for="full-name">Full name</label>
+        <br>
+        <input 
+          id="full-name"
+          type="text"
+          name="full-name"
+          placeholder="e.g. Juan Dela Cruz"
+          required
+        />
+        <br>
+        <br>
 
         <!-- 5. Email field -->
+        <label for="email">Email</label>
+        <br>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="e.g. juan@gmail.com"
+          required
+        />
+        <br>
+        <br>
 
         <!-- 6. Phone field -->
+        <label for="phone">Phone</label>
+        <br>
+        <input
+          id="phone"
+          type="tel"
+          name="phone"
+          placeholder="e.g. 123 456 7890"
+        />
+        <br>
+        <br>
 
         <!-- 7. Subject dropdown -->
+        <label for="subject">Subject</label>
+        <br>
+        <select id="subject" name="subject" required>
+          <option value="" disabled selected>Select a topic...</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Technical Support</option>
+          <option value="sales">Sales</option>
+          <option value="feedback">Fedback</option>
+          <option value="other">Other</option>
+        </select>
+        <br>
+        <br>
 
         <!-- 8. Message textarea -->
+        <label for="measage">Message</label>
+        <br>
+        <textarea
+          id="message"
+          name="message"
+          cols="22"
+          rows="5"
+          placeholder="Write something..."
+          required 
+        ></textarea>
+        <br>
 
         <!-- 9. Grouped checkboxes — topics of interest -->
+        <p>Topics of Interests:</p>
+        <input
+          type="checkbox"
+          id="web"
+          name="topics"
+          value="web"
+        />
+        <label for="web">Web Development</label>
+        <br>
+        
+        <input
+          type="checkbox"
+          id="design"
+          name="topics"
+          value="design"
+        />
+        <label for="design">UI/UX Design</label>
+        <br>
+        
+        <input
+          type="checkbox"
+          id="ai"
+          name="topics"
+          value="ai"
+        />
+        <label for="ai">Artificial Intelligence</label>
+        
+        <br>
+        <input
+          type="checkbox"
+          id="mobile"
+          name="topics"
+          value="mobile"
+        />
+        <label for="mobile">Mobile Apps</label>
+        <br>
 
         <!-- 10. Radio buttons — preferred contact method -->
+        <p>Preffered Contact Method:</p>
+        <input
+          type="radio"
+          id="preffered-email"
+          name="contact-method"
+          value="preffered-email"
+          checked
+        />
+        <label for="preffered-email">Email</label>
+        <br>
+        
+        <input
+          type="radio"
+          id="preffered-phone"
+          name="contact-method"
+          value="preffered-phone"
+        />
+        <label for="preffered-phone">Phone Call</label>
+        <br>
+        
+        <input
+          type="radio"
+          id="preffered-sms"
+          name="contact-method"
+          value="preffered-sms"
+        />
+        <label for="preffered-sms">SMS/Text</label>
+        <br>
+        <br>
 
         <!-- 11. Submit button -->
+        <input type="submit" value="Submit" />
 
-      </form>
+       </form>
     </section>
 
   </main>
 
   <!-- 12. Footer -->
   <footer>
+    <p>Copyright (c) 2026 Author. All Rights Reserved.</p>
 
+      <nav aria-label="Social media links">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com">facebook icon</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com">instagram icon</a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com">pinterest icon</a>
+          </li>
+        </ul>
+      </nav>
   </footer>
 
 </body>
