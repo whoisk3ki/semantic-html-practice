@@ -36,88 +36,80 @@
 
         <form>
           <!-- 4. Full name field -->
-          <label for="full-name">Full name</label>
-          <br />
-          <input
-            id="full-name"
-            type="text"
-            name="full-name"
-            placeholder="e.g. Juan Dela Cruz"
-            required
-          />
-          <br />
-          <br />
+          <div>
+            <label for="full-name">Full name</label>
+            <input
+              id="full-name"
+              type="text"
+              name="full-name"
+              placeholder="e.g. Juan Dela Cruz"
+              required
+            />
+          </div>
 
           <!-- 5. Email field -->
-          <label for="email">Email</label>
-          <br />
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="e.g. juan@gmail.com"
-            required
-          />
-          <br />
-          <br />
+          <div>
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="e.g. juan@gmail.com"
+              required
+            />
+          </div>
 
           <!-- 6. Phone field -->
-          <label for="phone">Phone</label>
-          <br />
-          <input
-            id="phone"
-            type="tel"
-            name="phone"
-            placeholder="e.g. 123 456 7890"
-          />
-          <br />
-          <br />
+          <div>
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="e.g. 123 456 7890"
+            />
+          </div>
 
           <!-- 7. Subject dropdown -->
-          <label for="subject">Subject</label>
-          <br />
-          <select id="subject" name="subject" required>
-            <option value="" disabled selected>Select a topic...</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Technical Support</option>
-            <option value="sales">Sales</option>
-            <option value="feedback">Feedback</option>
-            <option value="other">Other</option>
-          </select>
-          <br />
-          <br />
+          <div>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="sales">Sales</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
           <!-- 8. Message textarea -->
-          <label for="message">Message</label>
-          <br />
-          <textarea
-            id="message"
-            name="message"
-            cols="22"
-            rows="5"
-            placeholder="Write something..."
-            required
-          ></textarea>
-          <br />
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="22"
+              rows="5"
+              placeholder="Write something..."
+              required
+            ></textarea>
+          </div>
 
           <!-- 9. Grouped checkboxes — topics of interest -->
           <fieldset>
             <legend>Topics of Interests:</legend>
             <input type="checkbox" id="web" name="topics" value="web" />
             <label for="web">Web Development</label>
-            <br />
 
             <input type="checkbox" id="design" name="topics" value="design" />
             <label for="design">UI/UX Design</label>
-            <br />
 
             <input type="checkbox" id="ai" name="topics" value="ai" />
             <label for="ai">Artificial Intelligence</label>
 
-            <br />
             <input type="checkbox" id="mobile" name="topics" value="mobile" />
             <label for="mobile">Mobile Apps</label>
-            <br />
           </fieldset>
 
           <!-- 10. Radio buttons — preferred contact method -->
@@ -131,7 +123,6 @@
               checked
             />
             <label for="preferred-email">Email</label>
-            <br />
 
             <input
               type="radio"
@@ -140,7 +131,6 @@
               value="preferred-phone"
             />
             <label for="preferred-phone">Phone Call</label>
-            <br />
 
             <input
               type="radio"
@@ -149,8 +139,6 @@
               value="preferred-sms"
             />
             <label for="preferred-sms">SMS/Text</label>
-            <br />
-            <br />
           </fieldset>
 
           <!-- 11. Submit button -->
